@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myform"]["em"].value;
+   var y = document.forms["myform"]["pa"].value;
+  if (x == ""||y=="") {
+    alert("fill your info");
+    return false;
+  }}
+
+</script>
+
+<title>salfa hotel.book</title>
+<link rel="stylesheet" href="la.css">
+</head>
+<body>
+
+
+<ul>
+<li> <a href="home.html">home</a></li>
+<li> <a href="book.html">book</a></li>
+<li> <a  href="meeting.html">meetings</a></li>
+<li> <a  href="gallery.html">gallery</a></li>
+</ul>
+
+<br><br><br><br>
+<a href="home.html"><image style="width:200px;height:200px;margin-left:650px;" src="mt2.png"alt="the hotel logo"></a><br><br><br>
+
+
+
+<form  class="form2" name ="myform" onsubmit="return validateForm()" action="submit.html" >
+
+
+
+
+<label for="dte" style="margin-right:0px;margin-left:47px;"size="50">date:</label> 
+<input  id="dte" name="dte" type="date"style="margin-left:0px;"required size="70" >
+
+
+
+<label for="period" style="margin-left:80px;">period:</label>
+<select  id="period" name="period"  >
+<option style="display: none;background-color:rgb(35,19,48);"selected>number of nights</option>
+<option style="background-color:rgb(35,19,48);">1 night</option>
+<option style="background-color:rgb(35,19,48);">2 nights</option>
+<option style="background-color:rgb(35,19,48);">3 nights</option>
+<option style="background-color:rgb(35,19,48);">4 nights</option>
+<option style="background-color:rgb(35,19,48);">5 nights</option>
+<option style="background-color:rgb(35,19,48);">6 nights</option>
+<option style="background-color:rgb(35,19,48);">7 nights</option>
+<option style="background-color:rgb(35,19,48);">8 nights</option>
+<option style="background-color:rgb(35,19,48);">9 nights</option>
+<option style="background-color:rgb(35,19,48);">10 nights</option>
+<option style="background-color:rgb(35,19,48);">15 nights</option>
+<option style="background-color:rgb(35,19,48);">20 nights</option>
+<option style="background-color:rgb(35,19,48);">25 nights</option>
+<option style="background-color:rgb(35,19,48);">30 nights</option>
+</select>
+
+
+
+<label for="beds" style="margin-left:10px;">no. of beds:</label>  
+
+<label for="beds" style="margin-left:3px;">1</label>  
+<input  id="beds" name="beds" type="radio" style="margin-left:0px;" value="one bed" size="15">
+
+<label for="beds2" style="margin-left:3px;">2</label>  
+<input  id="beds2" name="beds" type="radio" style="margin-left:0px;" value="two beds" size="15"><br><br>
+
+
+
+<label for="fn">first name:</label> 
+<input  id="fn" name="fn" type="text" placeholder="moataz" required size="15">
+
+
+
+<label for="guests" style="margin-right:0px;margin-left:35px;">no.of guests:</label>
+<select   id="guests" name="guests" style="margin-left:0px;"  >
+<option style="display: none;background-color:rgb(35,19,48);"selected>number of guests</option>
+<option style="background-color:rgb(35,19,48);">1 guests</option>
+<option style="background-color:rgb(35,19,48);">2 guests</option>
+<option style="background-color:rgb(35,19,48);">3 guests</option>
+<option style="background-color:rgb(35,19,48);">4 guests</option>
+</select>
+
+
+
+<label for="features"style="margin-left:10px">features:</label><br><br>
+
+
+
+<label for="ln"style="margin-left:4px">last name:</label>
+<input  id="ln" name="ln" type="text" placeholder="mohannad"style="margin-left:0px;" required size="15" >
+
+
+<label for="children" style="margin-right:0px;margin-left:15px;">no. of children:</label>
+<select   id="children" name="children" style="margin-left:0px;"  >
+<option style="display: none;background-color:rgb(35,19,48);"selected>number of children</option>
+<option style="background-color:rgb(35,19,48);">1 child   </option>
+<option style="background-color:rgb(35,19,48);">2 children</option>
+<option style="background-color:rgb(35,19,48);">3 children</option>
+<option style="background-color:rgb(35,19,48);">4 children</option>
+</select>
+
+
+
+<label for="tv"style="margin-left:10px">a TV</label>
+<input  id="tv" name="tv" type="checkbox" style="margin-left:0px;"  size="15" ><br><br>
+
+
+
+
+<label for="em" style="margin-left:34px";>email:</label> 
+<input  id="em" name="em" type="email" placeholder="abcd@gmail.com"style="margin-left:0px;"size="15">
+
+
+<label for="rooms" style="margin-right:0px;margin-left:83px;">rooms:</label>
+<select   id="rooms" name="rooms" style="margin-left:0px;"  >
+<option style="display: none;background-color:rgb(35,19,48);"selected>number of rooms</option>
+<option style="background-color:rgb(35,19,48);">1 room</option>
+<option style="background-color:rgb(35,19,48);">2 rooms</option>
+<option style="background-color:rgb(35,19,48);">3 rooms</option>
+<option style="background-color:rgb(35,19,48);">4 rooms</option>
+</select>
+
+
+
+<label for="fridge"style="margin-left:10px">a mini-fridge</label>
+<input  id="fridge" name="fridge" type="checkbox" style="margin-left:0px;"  size="15" ><br><br>
+
+
+
+
+<label for="pa" style="margin-left:3px;">password:</label>  
+<input  id="pa" name="pa" type="password" style="margin-left:0px;"  size="15">
+
+
+<label for=" room type" style="margin-right:0px;margin-left:55px;"> room type:</label>
+<select   id="rooms" name="rooms" style="margin-left:0px;"  >
+<option style="display: none;background-color:rgb(35,19,48);"selected>type of room</option>
+<option style="background-color:rgb(35,19,48);">normal</option>
+<option style="background-color:rgb(35,19,48);">luxury</option>
+<option style="background-color:rgb(35,19,48);">suite</option>
+
+</select>
+
+
+
+<label for="parking-lot"style="margin-left:10px">a parking-lot</label>
+<input  id="parking-lot" name="parking-lot" type="checkbox" style="margin-left:0px;"  size="15" ><br><br>
+
+
+
+
+
+   
+
+	
+<input style="color:#8d6e11;" type="submit" value="submit"style="background-color:transparent;">
+<input style="color:#8d6e11;" type="reset" style="background-color:transparent;">
+
+</form>
+
+
+
+
+
+<br>
+<a href="home.html"><input style="color:#8d6e11;background-color:#231330;margin-left:48%;border-radius:24px;padding:10px;font-size:15px;" type="button" value="prev"></a>
+
+<a href="meeting.html"><input style="color:#8d6e11;background-color:#231330;border-radius:24px;padding:10px;font-size:15px;" type="button" value="next"></a>
+<br>
+
+
+
+<pre style="background-color:#231330;font-size:20px;font-family:saintgermain;color:#8d6e11;opacity:0.8;margin-left:100px;margin-right:100px;padding:10px;border:5px solid #8d6e11;border-radius:24px;"> copyright 2020-2021 MT.all rights reserved</pre>
+
+</body>
+</html>
